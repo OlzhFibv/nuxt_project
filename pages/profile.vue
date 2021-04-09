@@ -1,6 +1,7 @@
 <template>
   <body>
-    <div class="header">
+    <script src="https://kit.fontawesome.com/8553972d45.js" crossorigin="anonymous"></script>
+    <div class="header" >
   <img src="../assets/images/sasuk_crop.jpg" class="avatarr rounded-full transition duration-500 ease-in-out transform :-translate-y-1 hover:scale-110" alt=""><br>
   <p class="font-bold text-2xl">OLZHAS</p>
 </div>
@@ -67,7 +68,7 @@ Ds: https://discord.gg/6Kaw3hN</p>
   </div>
 </div>
 
-<footer class="footer-1 bg-gray-800 py-8 sm:py-12 shadow-inner">
+<footer class="border1 footer-1 bg-gray-800 py-8 sm:py-12 shadow-inner">
   <div class="container mx-auto px-4">
     <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
     
@@ -150,6 +151,12 @@ Ds: https://discord.gg/6Kaw3hN</p>
 </template>
 
 <style scoped>
+.border1{
+  border:#fbff00 5px solid;
+  border-left: none;
+  border-right:none;
+}
+
 .avatarr{
   margin: 0 auto;
   min-height: 20vh;
@@ -173,10 +180,19 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-image:url(assets/images/bakuman.jpg) ;
-  color: white;
+  background-image: url(assets/images/coolview.jpg);
+  width: 100%;
+  overflow: hidden;
+  color:darkblue;
+}
+ .wrapper__video{
+  object-fit: cover;
+  width: 100%;
+  height: 10%;
 }
 
 /* Increase the font size of the heading */
@@ -191,6 +207,10 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  border:#fbff00 5px solid;
+  border-left: none;
+  border-right:none;
+  border-bottom: none;
 }
 
 /* Style the navigation bar links */

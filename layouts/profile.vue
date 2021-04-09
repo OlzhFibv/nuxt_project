@@ -1,6 +1,7 @@
 <template>
   <div>
     <header>
+      
       <NuxtLink to="/">
         Home
         <svg

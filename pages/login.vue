@@ -1,19 +1,20 @@
 <template>
 <div>
+  
   <div class="bg-color">
     <div class="topnav">
       <a href="/">Home</a>
-      <a href="/news">News</a>
+      <a href="/news">Read Manga</a>
 <a class="active" href="#home">Sign in</a>
       <a href="/users">About</a>
-      <input type="text" placeholder="Search.." name="search" />
+      <div class="mx-8 absolute inset-y-0 right-0 "><img src="../assets/images/jujutsu.png" class="logotype" alt="image"></div>
     </div>
       <div class="container">
           <form @submit.prevent>
               <h1 class="title">
           sign in
         </h1>
-          <label for="username">Username</label>
+          <label for="username" >Username</label>
           <input v-model="user.username" id="username" type="text" />
           <label for="password">Password</label>
           <input v-model="user.password" id="password" type="text" />
@@ -69,6 +70,7 @@ label {
   font-size: 14px;
   margin: 0 0.5rem;
   margin-bottom: 0.25rem;
+  color:aliceblue;
 }
 
 input {
@@ -81,6 +83,7 @@ input {
   border-radius: 0.5rem;
   box-shadow: none;
   box-sizing: border-box;
+  color:aliceblue;
 }
 .bg-color{
   background-image: url(assets/images/city.jpg);

@@ -1,9 +1,10 @@
 <template>
   <div>
+    <script src="https://kit.fontawesome.com/8553972d45.js" crossorigin="anonymous"></script>
     <div class="bg">
     <div class="topnav shadow-md">
       <a href="/">Main</a>
-      <a href="/news">News</a>
+      <a href="/news">Read Manga</a>
       <a href="/login">Sign in</a>
       <a class="active" href="#home">About</a>
       <div class="mx-8 absolute inset-y-0 right-0 "><img src="../assets/images/jujutsu.png" class="logotype" alt="image"></div>
@@ -185,9 +186,9 @@
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 20px;
+  padding: 30px 50px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 /* Change the color of links on hover */

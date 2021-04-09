@@ -1,10 +1,11 @@
 
 <template>
 <div>
+  <script src="https://kit.fontawesome.com/8553972d45.js" crossorigin="anonymous"></script>
   <div class="bg-img">
     <div class="topnav">
       <a class="active" href="#home">Home</a>
-      <a href="/news">News</a>
+      <a href="/news">Read Manga</a>
       <a href="/login">Sign in</a>
       <a href="/users">About</a>
        <div class="mx-8 absolute inset-y-0 right-0 "><img src="../assets/images/jujutsu.png" class="logotype" alt="image"></div>
@@ -29,16 +30,16 @@
   <div class="column">
     <div class="card">
       <p><i class="fa fa-check"></i></p>
-      <h3>55+</h3>
-      <p>Projects</p>
+      <h3>1000+</h3>
+      <p>Manga</p>
     </div>
   </div>
   
   <div class="column">
     <div class="card">
       <p><i class="fa fa-smile-o"></i></p>
-      <h3>100+</h3>
-      <p>Happy Clients</p>
+      <h3>5000+</h3>
+      <p>Happy Users</p>
     </div>
   </div>
   
@@ -46,11 +47,24 @@
     <div class="card">
       <p><i class="fa fa-coffee"></i></p>
       <h3>100+</h3>
-      <p>Meetings</p>
+      <p>Moderators</p>
     </div>
   </div>
 </div>
   </div>
+  <div class="container2">
+  <div class="row">
+    <div class="column-33">
+      <img src="../assets/images/madara.png" alt="App" width="500" height="600">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Service</b></h1>
+      <h1 class="large-font" ><b>why you should choose us?</b></h1>
+      <p class="text-white"><span style="font-size:24px">One of the progressive manga reading sites.</span> <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas dolore quaerat earum illo, asperiores natus veniam vero impedit quis recusandae voluptatum at aliquid consequuntur suscipit ratione eum, beatae dolorum ab.</p>
+      <button class="button" >Read!</button>
+    </div>
+  </div>
+</div>
 <footer class="footer-1 bg-gray-700 py-8 sm:py-12 shadow-inner">
   <div class="container mx-auto px-4">
     <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
@@ -132,12 +146,13 @@
 </footer>
 
 </div>
-
 </template>
-
-<script>
+<script >
 export default {};
+
 </script>
+
+
 
 <style>
 .logotype{
@@ -181,10 +196,10 @@ export default {};
 /* Style the counter cards */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+  padding: 20px;
   text-align: center;
-  background-color: #444;
-  color: white;
+  background-color: #333;
+  color: #ffe815;
 }
 
 .fa {font-size:50px;}
@@ -201,14 +216,14 @@ export default {};
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 20px;
+  padding: 30px 50px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: rgb(255, 218, 96);
+  background-color: #ffe815;
   color: rgb(0, 0, 0);
 }
 
@@ -221,6 +236,8 @@ export default {};
   background-image: url(assets/images/city.jpg);
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
+  object-fit: cover;
 }
 
 .container1 {
@@ -276,5 +293,66 @@ export default {};
     border: 1px solid rgb(238, 255, 0);
   }
 }
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
 
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+  color: #f2f2f2;
+}
+
+.xlarge-font {
+  font-size: 64px;
+  color: #fbff00;
+}
+
+.button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 25px 60px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #fbff00;
+  margin: 20px;
+  
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+.container2 {
+  padding: 64px;
+  background-color:rgb(32, 32, 32) ;
+  border:#fbff00 5px solid;
+  border-left: none;
+  border-right:none;
+}
 </style>
